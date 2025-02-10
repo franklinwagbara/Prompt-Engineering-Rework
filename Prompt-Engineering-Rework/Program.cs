@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class FibonacciGenerator
+public class Fibonacci
 {
     /// <summary>
     /// Prints the Fibonacci series with n numbers.
@@ -8,46 +8,49 @@ public class FibonacciGenerator
     /// <param name="n">The number of terms to generate in the Fibonacci sequence.</param>
     public void PrintFibonacciSeries(int n)
     {
-        // Input validation
+        // Input validation: Check for non-negative input
         if (n < 0)
         {
-            Console.WriteLine("Input must be a non-negative integer.");
-            return;
+            throw new ArgumentException("The number of terms 'n' cannot be negative.");
         }
 
+        // Handle base cases: n = 0 and n = 1
         if (n == 0)
         {
             return; // Nothing to print
         }
 
-        long a = 0, b = 1, c;
-
-        Console.WriteLine(a); // Print the first term
-
         if (n == 1)
         {
+            Console.WriteLine(0);
             return;
         }
 
-        Console.WriteLine(b); // Print the second term
+        // Initialize the first two Fibonacci numbers
+        int a = 0;
+        int b = 1;
 
+        // Print the first two numbers
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+
+        // Iterate to generate and print the remaining Fibonacci numbers
         for (int i = 3; i <= n; i++)
         {
-            c = a + b;
-            Console.WriteLine(c);
+            int next = a + b;
+            Console.WriteLine(next);
             a = b;
-            b = c;
+            b = next;
         }
     }
-
     public static void Main(string[] args)
     {
         Console.WriteLine("Enter the number of Fibonacci terms to generate:");
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
 
         if (int.TryParse(input, out int n))
         {
-            FibonacciGenerator generator = new FibonacciGenerator();
+            Fibonacci generator = new Fibonacci();
             generator.PrintFibonacciSeries(n);
         }
         else
