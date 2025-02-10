@@ -2,15 +2,16 @@ using NUnit.Framework;
 using System;
 using System.IO;
 
-public class FibonacciGeneratorTests
+[TestFixture]
+public class FibonacciTests
 {
-    private FibonacciGenerator generator;
+    private Fibonacci fibonacci;
     private StringWriter consoleOutput;
 
     [SetUp]
     public void Setup()
     {
-        generator = new FibonacciGenerator();
+        fibonacci = new Fibonacci();
         consoleOutput = new StringWriter();
         Console.SetOut(consoleOutput);
     }
@@ -23,51 +24,50 @@ public class FibonacciGeneratorTests
     }
 
     [Test]
-    public void PrintFibonacciSeries_NegativeInput_PrintsErrorMessage()
+    public void PrintFibonacciSeries_NegativeInput_ThrowsArgumentException()
     {
-        generator.PrintFibonacciSeries(-5);
-        Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo("Input must be a non-negative integer."));
+        Assert.Throws<ArgumentException>(() => fibonacci.PrintFibonacciSeries(-1));
     }
 
     [Test]
-    public void PrintFibonacciSeries_ZeroInput_PrintsNothing()
+    public void PrintFibonacciSeries_ZeroInput_DoesNotPrintAnything()
     {
-        generator.PrintFibonacciSeries(0);
-        Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo(""));
+        fibonacci.PrintFibonacciSeries(0);
+        Assert.That(consoleOutput.ToString(), Is.EqualTo(""));
     }
 
     [Test]
     public void PrintFibonacciSeries_OneInput_PrintsZero()
     {
-        generator.PrintFibonacciSeries(1);
+        fibonacci.PrintFibonacciSeries(1);
         Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo("0"));
     }
 
     [Test]
     public void PrintFibonacciSeries_TwoInput_PrintsZeroAndOne()
     {
-        generator.PrintFibonacciSeries(2);
+        fibonacci.PrintFibonacciSeries(2);
         Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo("0\r\n1"));
     }
 
     [Test]
     public void PrintFibonacciSeries_FiveInput_PrintsCorrectSequence()
     {
-        generator.PrintFibonacciSeries(5);
+        fibonacci.PrintFibonacciSeries(5);
         Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo("0\r\n1\r\n1\r\n2\r\n3"));
     }
 
     [Test]
     public void PrintFibonacciSeries_TenInput_PrintsCorrectSequence()
     {
-        generator.PrintFibonacciSeries(10);
+        fibonacci.PrintFibonacciSeries(10);
         Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo("0\r\n1\r\n1\r\n2\r\n3\r\n5\r\n8\r\n13\r\n21\r\n34"));
     }
 
     [Test]
     public void PrintFibonacciSeries_LargeInput_PrintsCorrectSequence()
     {
-        generator.PrintFibonacciSeries(15);
+        fibonacci.PrintFibonacciSeries(15);
         Assert.That(consoleOutput.ToString().Trim(), Is.EqualTo("0\r\n1\r\n1\r\n2\r\n3\r\n5\r\n8\r\n13\r\n21\r\n34\r\n55\r\n89\r\n144\r\n233\r\n377"));
     }
 }
