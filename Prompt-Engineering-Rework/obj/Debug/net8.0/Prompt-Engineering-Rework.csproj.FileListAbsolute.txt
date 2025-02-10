@@ -1,0 +1,14 @@
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\bin\Debug\net8.0\Prompt-Engineering-Rework.exe
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\bin\Debug\net8.0\Prompt-Engineering-Rework.deps.json
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\bin\Debug\net8.0\Prompt-Engineering-Rework.runtimeconfig.json
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\bin\Debug\net8.0\Prompt-Engineering-Rework.dll
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\bin\Debug\net8.0\Prompt-Engineering-Rework.pdb
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.AssemblyInfoInputs.cache
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.AssemblyInfo.cs
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.csproj.CoreCompileInputs.cache
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.dll
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\refint\Prompt-Engineering-Rework.dll
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.pdb
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\Prompt-Engineering-Rework.genruntimeconfig.cache
+C:\Users\Franklin Wagbara\Documents\Turing\Task1\Prompt-Engineering-Rework\Prompt-Engineering-Rework\obj\Debug\net8.0\ref\Prompt-Engineering-Rework.dll
